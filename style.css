@@ -1,3 +1,5 @@
+/********** Universal **********/
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,7 +15,9 @@ a {
   color: black;
 }
 
-#background {
+/********** Home Page **********/
+
+#background-home {
   height: 100%;
   background-image: url("highres/main-page.jpg");
   background-size: auto 100%;
@@ -23,28 +27,59 @@ a {
 
 #home-text-container{
   position: absolute;
-  width: 50%;
-  left: 10%;
+  left: 5%;
   top: 10%;
   font-family: comicjames;
 }
 
 #home-title{
-  font-size: 84px;
-  letter-spacing: 29px;
+  font-size: 7vw;
+  letter-spacing: 5.3vw;
 }
 
 #home-subtitle{
   margin-top: 20px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 2.2vw;
 }
 
-#home-menu-continer{
-}
+#home-menu-continer{}
 
 .home-menu-item{
-  margin-top: 30px;
-  font-size: 25px;
-  letter-spacing: 24px;
+  margin-top: 40px;
+  font-size: 3vw;
+  letter-spacing: 3vw;
 }
+
+/* Home resize media query */
+@media (max-width: 600px) {
+
+  #home-title{
+    font-size: 14vw;
+    letter-spacing: 10.6vw;
+  }
+
+  #home-subtitle{
+    font-size: 4.4vw;
+  }
+
+  .home-menu-item{
+    font-size: 6vw;
+    letter-spacing: 6vw;
+  }
+
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  background-home{
+    background-size: auto 70%;
+  }
+}
+
+/********** Bio page **********/
+
+/********** Event page **********/
+
+/********** Portfolio page **********/
+
+/********** Contact page **********/
