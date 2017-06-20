@@ -49,30 +49,46 @@ a {
   margin-top: 40px;
   font-size: 3vw;
   letter-spacing: 3vw;
+  background-color: white;
+  padding: 3px;
+}
+
+#home-image-small{
+  width: 100%;
+  margin-bottom: -5px;
+  display: none;
 }
 
 /* Home resize media query */
-@media (max-width: 600px) {
+@media (max-width: 1000px) and (min-width: 700px) {
+  #background-home{
+    background-size: auto 80%;
+  }
+}
 
+@media (max-width: 700px) {
   #home-title{
     font-size: 14vw;
     letter-spacing: 10.6vw;
   }
-
   #home-subtitle{
     font-size: 4.4vw;
   }
-
   .home-menu-item{
     font-size: 6vw;
     letter-spacing: 6vw;
   }
-
-}
-
-@media (max-width: 800px) and (min-width: 600px) {
-  background-home{
-    background-size: auto 70%;
+  #background-home {
+    display: none;
+  }
+  #home-text-container {
+    position: static;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #home-image-small {
+    display: inline;
   }
 }
 
