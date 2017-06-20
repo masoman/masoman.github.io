@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+    font-family: comicjames;
+    src: url(fonts/ComicJames.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#background {
+  height: 100%;
+  background-image: url("highres/main-page.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#home-text-container{
+  position: absolute;
+  width: 50%;
+  left: 10%;
+  top: 10%;
+  font-family: comicjames;
+}
+
+#home-title{
+  font-size: 84px;
+  letter-spacing: 29px;
+}
+
+#home-subtitle{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+#home-menu-continer{
+}
+
+.home-menu-item{
+  margin-top: 30px;
+  font-size: 25px;
+  letter-spacing: 24px;
+}
