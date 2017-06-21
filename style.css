@@ -15,6 +15,28 @@ a {
   color: black;
 }
 
+.text {
+  font-family: comicjames;
+}
+
+#nav-bar {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.6vw;
+  word-spacing: 1vw;
+}
+
+.nav-item {
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    #nav-bar {
+      font-size: 5.2vw;
+      word-spacing: 2vw;
+    }
+}
+
 /********** Home Page **********/
 
 #background-home {
@@ -29,7 +51,6 @@ a {
   position: absolute;
   left: 5%;
   top: 10%;
-  font-family: comicjames;
 }
 
 #home-title{
@@ -89,10 +110,79 @@ a {
   }
   #home-image-small {
     display: inline;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   }
 }
 
 /********** Bio page **********/
+
+#bio-text-container {
+  float: right;
+  position: absolute;
+  width: 40%;
+  left: 55%;
+  top: 15%;
+}
+
+#bio-title {
+  text-align: center;
+  padding-left: 7vw;
+  font-size: 8vw;
+  letter-spacing: 8vw;
+}
+
+#bio-text {
+  margin-top: 40px;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+#bio-picture {
+  float: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  max-width: 700px;
+  background-image: url("highres/bio.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media (max-width: 700px) {
+  #bio-text-container {
+    float: none;
+    position: static;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  #bio-title {
+    text-align: center;
+    padding-left: 14vw;
+    font-size: 16vw;
+    letter-spacing: 16vw;
+  }
+
+  #bio-picture {
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    background-image: url("highres/bio.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
 
 /********** Event page **********/
 
