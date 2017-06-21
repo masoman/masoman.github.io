@@ -20,6 +20,9 @@ a {
 }
 
 #nav-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
   margin-top: 50px;
   text-align: center;
   font-size: 2.6vw;
@@ -30,10 +33,11 @@ a {
   margin-top: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     #nav-bar {
       font-size: 5.2vw;
       word-spacing: 2vw;
+      position: static;
     }
 }
 
@@ -126,6 +130,7 @@ a {
   width: 40%;
   left: 55%;
   top: 15%;
+  height: 70%;
 }
 
 #bio-title {
@@ -144,7 +149,7 @@ a {
 
 #bio-text {
   margin-top: 40px;
-  font-size: 1em;
+  font-size: 1.5em;
   letter-spacing: 0.2em;
   line-height: 1.5em;
   text-align: justify;
@@ -157,7 +162,7 @@ a {
   bottom: 0;
   height: 100%;
   width: 50%;
-  max-width: 700px;
+  max-width: 750px;
   background-image: url("highres/bio.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -171,19 +176,18 @@ a {
   bottom: 0;
   height: 100%;
   width: 50%;
-  max-width: 700px;
   background-image: url("highres/contact-page.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #bio-text-container {
     float: none;
     position: static;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 30%;
     margin-left: 5%;
   }
 
@@ -204,14 +208,15 @@ a {
   #bio-picture {
     position: static;
     width: 100%;
-    height: 90%;
-    max-width: 600px;
+    height: 100%;
+    margin-top: -200px;
   }
 
   #contact-picture {
     position: static;
-    height: 90%;
+    height: 100%;
     width: 100%;
+    margin-top: -200px;
   }
 
 }
