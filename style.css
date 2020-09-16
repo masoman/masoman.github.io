@@ -1,0 +1,457 @@
+/* -------------------
+--- General Styles ---
+------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background-image: url("tree-bg.jpg");
+    background-size: 100vw 100vh;
+}
+
+/* ---------------
+--- Typography ---
+--------------- */
+
+@font-face {
+    font-family: 'keqima';
+    src: url('Keqima.otf') format('opentype'),
+        url('Keqima.tff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font: 12px keqima;
+    letter-spacing: 2px;
+}
+
+a:link, a:visited, a:focus {
+    color: #3aa2a3;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #e04f67;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+/* ---------------
+----- Header -----
+--------------- */
+
+header {
+    width: 92%;
+    padding: 0 4%;
+    height: 7%;
+    min-height: 35px;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    letter-spacing: .6em
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    padding-left: 3em;
+}
+
+nav img {
+    height: 2rem;
+}
+
+nav img :hover {
+    content: url("instaicon-red.png")
+}
+
+#instalink, .site-title-link {
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------
+--- Main Body ----
+--------------- */
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1100vw;
+    height: 100vh;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.slide {
+    position: relative;
+    width: 100vw;
+    height: 93vh;
+    padding-top: 7vh;
+    scroll-snap-align: center;
+}
+
+/* ---------------
+--- Art Images ---
+--------------- */
+
+.art {
+    position: absolute;
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
+            drop-shadow(0px 0px 10px rgba(0,0,0,.3));
+}
+
+.art img {
+    width: 100%;
+    max-height: 83vh;
+    object-fit: contain;
+}
+
+@media (max-height: 500px) {
+    .art img {
+        max-height: calc(100vh - 35px - 10vh);
+    }
+    .art {
+        top: calc(50vh + 18px) !important;
+        transform: translate(0, -50%) !important;
+        bottom: auto !important;
+    }
+}
+
+/* Slide One */
+
+#main-title {
+    margin-top: 5%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Slide Two */
+
+#Window {
+    width: 25%;
+    left: 5%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Liminal {
+    width: 30%;
+    right: 35%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Xinji-Town {
+    width: 25%;
+    right: 5%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slide Three */
+
+#Communist {
+    width: 30%;
+    left: 13.3%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Speechless {
+    width: 30%;
+    right: 13.3%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slide Four */
+
+#August {
+    width: 60%;
+    left: 20%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slide Five */
+
+#Portrait-1 {
+    width: 25%;
+    left: 6.25%;
+    top: 12%;
+}
+
+#Landscape-1 {
+    width: 25%;
+    left: 37.5%;
+    bottom: 5%;
+}
+
+#Portrait-2 {
+    width: 25%;
+    right: 6.25%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slide Six */
+
+#Cordyceps {
+    width: 25%;
+    left: 6.25%;
+    bottom: 5%;
+}
+
+#Germination {
+    width: 25%;
+    left: 37.5%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Libation {
+    width: 25%;
+    right: 6.25%;
+    top: 12%;
+}
+
+/* Slides Seven */
+
+#Mimic {
+    width:25%;
+    left: 10%;
+    top:53.5%;
+    transform: translate(0, -50%);
+}
+
+#Ornithurae {
+    width:45%;
+    right: 10%;
+    top:53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slides Eight */
+
+#Effusion {
+    width: 20%;
+    left: 40%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Pinball {
+    width: 30%;
+    right: 5%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Eric {
+    width: 30%;
+    left: 5%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+/* Slide Nine */
+
+#Zenith {
+    height: 83%;
+    left: 50%;
+    top: 53.5%;
+    transform: translate(-50%, -50%);
+}
+
+#Zenith img {
+    height: 100%;
+}
+
+/* Slide Ten */
+
+#Conversion {
+    width: 28%;
+    left: 4%;
+    top: 13%;
+}
+
+#Entrapment {
+    width: 28%;
+    left: 36%;
+    top: 53.5%;
+    transform: translate(0, -50%);
+}
+
+#Apostasy {
+    width: 28%;
+    right: 4%;
+    bottom: 6%;
+}
+
+/* Slide Eleven */
+
+#Self-Portrait {
+    width:25%;
+    left: 12.5%;
+    top:53.5%;
+    transform: translate(0, -50%);
+}
+
+/* ------------------
+--- Other Content ---
+------------------ */
+
+.bio {
+    position: absolute;
+    width: 40%;
+    top: 53.5%;
+    right: 12.5%;
+    transform: translate(0, -50%);
+    color: #242629;
+}
+
+.iframe-container-container {
+    position: relative;
+    width: 80%;
+    margin: 0px auto;
+    top: 5%;
+    max-width: 90vh;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+    width: 100%;
+    height: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.iframe-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#scroller {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0%;
+    margin: 0 auto;
+}
+
+#scroller img {
+    max-height: 20vh;
+}
+
+/* ------------------------------------------------
+-------- Mobile AND Tablet Media Queries ----------
+------------------------------------------------ */
+
+
+@media (orientation: portrait) {
+
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #paintinglink, #shoplink, #infolink {
+        display: flex;
+        align-items: center;
+    }
+
+    .outer-wrapper {
+        all: unset;
+        position: absolute;
+        top: 7%;
+        width: 100vw;
+    }
+
+    .wrapper, .slide, .art {
+        all: unset;
+    }
+
+    .art img {
+        display: block;
+        margin: 25px auto 0px auto;
+        width: 85%;
+        max-height: none;
+    }
+
+    .iframe-container-container {
+        width: 85%;
+        margin-top: 25px;
+        max-width: none;
+    }
+
+    .bio {
+        all: unset;
+        display: block;
+        margin: 25px 7.5%;
+    }
+
+    #scroller {
+        display: none;
+    }
+
+}
+
+/* ------------------------------------------------
+----------- Mobile ONLY Media Queries -------------
+------------------------------------------------ */
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    nav li{
+        padding-left: 4vw;
+    }
+
+    nav img {
+        height: 5vw;
+    }
+
+}
