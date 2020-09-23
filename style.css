@@ -441,8 +441,8 @@ nav img :hover {
     #home::before, #info::before{
         content: "";
         display: block;
-        height: 7vh; /* fixed header height*/
-        margin-top: -7vh; /* negative fixed header height */
+        height: 6vh; /* fixed header height*/
+        margin-top: -6vh; /* negative fixed header height */
         visibility: hidden;
         pointer-events: none;
     }
