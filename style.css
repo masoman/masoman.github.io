@@ -443,6 +443,8 @@ nav img :hover {
         display: block;
         height: 7vh; /* fixed header height*/
         margin-top: -7vh; /* negative fixed header height */
+        visibility: hidden;
+        pointer-events: none;
     }
 
     .outer-wrapper::before{content:""; display:block; position:fixed; z-index:-1; height:100%; width:100%; background-image:url("tree-bg.jpg")}
