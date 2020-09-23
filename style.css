@@ -395,6 +395,10 @@ nav img :hover {
         background-attachment: fixed;
     }
 
+    a:hover, a:active {
+        color: #3aa2a3;
+    }
+
     #paintinglink, #shoplink, #infolink {
         display: flex;
         align-items: center;
@@ -434,6 +438,15 @@ nav img :hover {
         display: none;
     }
 
+    :target::before {
+        content: "";
+        display: block;
+        height: 7vh; /* fixed header height*/
+        margin-top: -7vh; /* negative fixed header height */
+    }
+
+    .outer-wrapper::before{content:""; display:block; position:fixed; z-index:-1; height:100%; width:100%; background-image:url("tree-bg.jpg")}
+
 }
 
 /* ------------------------------------------------
@@ -446,7 +459,7 @@ nav img :hover {
         font-size: 5vw;
     }
 
-    nav li{
+    nav li {
         padding-left: 4vw;
     }
 
