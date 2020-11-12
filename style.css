@@ -43,6 +43,7 @@ a:hover, a:active {
 h1 {
     font-size: 2rem;
     font-weight: bold;
+    line-height: 1;
 }
 
 p {
@@ -399,11 +400,6 @@ nav img :hover {
         color: #3aa2a3;
     }
 
-    #paintinglink, #shoplink, #infolink {
-        display: flex;
-        align-items: center;
-    }
-
     .outer-wrapper {
         all: unset;
         position: absolute;
@@ -456,6 +452,11 @@ nav img :hover {
 ------------------------------------------------ */
 
 @media (max-width: 650px) {
+
+    #paintinglink, #shoplink, #infolink {
+        display: flex;
+        align-items: center;
+    }
 
     h1 {
         font-size: 5vw;
